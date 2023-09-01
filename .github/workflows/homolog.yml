@@ -1,12 +1,12 @@
-name: homolog CI
+name: develop CI
 
 on:
   push:
     branches:
-      - homolog
+      - develop
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -20,30 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Save node_modules as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: node_modules
-          path: node_modules
-
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Download node_modules artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: node_modules
 
       - name: Run Cypress tests and generate video
         run: npm run register-hml
