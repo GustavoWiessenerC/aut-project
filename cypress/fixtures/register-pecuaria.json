@@ -1,6 +1,58 @@
 [
- {
-    
- }    
-  
+    {
+        "document": "CNPJ",
+        "type": "Pecuária",
+        "filial": "PSA 1",
+        "complement" : "TEST IN SEARCH RESULTS LIVE TEXT DEMONSTRATIVE TEST RUN",
+        "animalBenef": 200,
+        "culture" : "Pecuária",
+        "yearSaf": "2023/2024",
+        "client": "Pessoa Jurídica",
+        "nameClient": "FAKE CLIENT",
+        "valueClient": "50818322000110",
+        "acessRot": "LIVE IN ROT ACESS DEMONSTRATIVE TEST RUNNN",
+        "archiveLocale": "gleba.kml"
+    },
+    {
+        "document": "CPF",
+        "type": "Pecuária",
+        "filial": "PSA 2",
+        "complement" : "TEST IN SEARCH RESULTS 2 LIVE TEXT DEMONSTRATIVE TEST RUN",
+        "animalBenef": 90000,
+        "culture" : "Pecuária",
+        "yearSaf": "2024/2025",
+        "client": "Pessoa Física",
+        "nameClient": "TEST NAME CLIENT IN 2",
+        "valueClient": "02328900992",
+        "acessRot": "LIVE IN ROT ACESS DEMONSTRATIVE TEST RUNNN 2",
+        "archiveLocale": "gleba.kml"
+    },
+    {
+        "document": "CPF",
+        "type": "Pecuária",
+        "filial": "PSA 2",
+        "complement" : "TEST IN SEARCH RESULTS 3 LIVE TEXT DEMONSTRATIVE TEST RUN",
+        "animalBenef": 12000,
+        "culture" : "Pecuária",
+        "yearSaf": "2024/2025",
+        "client": "Pessoa Física",
+        "nameClient": "TEST NAME CLIENT IN 4",
+        "valueClient": "09312453971",
+        "acessRot": "LIVE IN ROT ACESS DEMONSTRATIVE TEST RUNNN 3",
+        "archiveLocale": "gleba.kml"
+    },
+    {
+        "document": "CNPJ",
+        "type": "Pecuária",
+        "filial": "PSA 1",
+        "complement" : "TEST IN SEARCH RESULTS 5 LIVE TEXT DEMONSTRATIVE TEST RUN RUNNNER",
+        "animalBenef": 90000,
+        "culture" : "Pecuária",
+        "yearSaf": "2023/2024",
+        "client": "Pessoa Jurídica",
+        "nameClient": "TEST NAME CLIENT IN 5",
+        "valueClient": "48855337000107",
+        "acessRot": "LIVE IN ROT ACESS DEMONSTRATIVE TEST RUNNN 3",
+        "archiveLocale": "gleba.kml"
+    }
 ]

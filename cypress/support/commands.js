@@ -19,6 +19,8 @@ Cypress.Commands.add('registerInOperation', () => {
 Cypress.Commands.add('getTypeBasead', (type) => {
     if(type == 'Agrícola') {
         cy.contains('a[id=btn_agricola]', type).should('is.visible').click()
+    }else {
+        cy.contains('a[id=btn_pecuaria]', type).should('is.visible').click()
     }
    
 })
@@ -34,27 +36,21 @@ Cypress.Commands.add('startRegister', () => {
 })
 
 
-Cypress.Commands.add('register', (unicRegister) => {
-    cy.get('textarea[name="operacao.descricao"]')
-                                .should('is.visible')
-                                     .type(unicRegister.complement)
+Cypress.Commands.add('registerOperation', (unicRegister) => {
+    cy.get('textarea[name="operacao.descricao"]').should('is.visible').type(unicRegister.complement);
+    
+    if (unicRegister.type === 'Pecuária') {
+        cy.get('input[name="operacao.totalAnimal"]').should('is.visible').type(unicRegister.animalBenef);
+    } else {
+        cy.get('input[name="operacao.areaFinanciada"]').should('is.visible').type(unicRegister.financedArea);
+    }
 
-    cy.get('input[name="operacao.areaFinanciada')
-                                .should('is.visible')
-                                        .type(unicRegister.financedArea)
+    cy.get('select[id="operacao.culturaId"]').should('is.visible').select(unicRegister.culture);
+    cy.get('select[id="operacao.anoSafraId"]').should('is.visible').select(unicRegister.yearSaf);
+    cy.get('textarea[id="operacao.roteiroAcesso"]').should('is.visible').type(unicRegister.acessRot);
+});
 
-    cy.get('select[id="operacao.culturaId')
-                                .should('is.visible')
-                                        .select(unicRegister.culture)
 
-    cy.get('select[id="operacao.anoSafraId"')     
-                                .should('is.visible')      
-                                        .select(unicRegister.yearSaf)           
-                                        
-    cy.get('textarea[id="operacao.roteiroAcesso"]')
-                                .should('is.visible')
-                                        .type(unicRegister.acessRot)                                
-})
 
 Cypress.Commands.add('definedTypeInClientUser', (unicRegister) => {
     if(unicRegister.client == 'Pessoa Física') {
@@ -67,6 +63,8 @@ Cypress.Commands.add('definedTypeInClientUser', (unicRegister) => {
         cy.get('input[id=responsavel_cnpj]').should('is.visible').type(unicRegister.valueClient)
     }
 })
+
+
 Cypress.Commands.add('processGleba', (gleba) => {
     cy.get('a[id=btn_importar_gleba]').should('be.visible').click();
   
@@ -79,5 +77,5 @@ Cypress.Commands.add('processGleba', (gleba) => {
     cy.get('button[id=cadastro-btn]').click();
 
     cy.wait('@importacaoGleba').its('response.statusCode').should('eq', 200);
-  });
+});
   

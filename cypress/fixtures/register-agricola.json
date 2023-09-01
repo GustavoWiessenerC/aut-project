@@ -1,6 +1,6 @@
 [
     {
-        "document": "cpf",
+        "document": "CNPJ",
         "type": "Agrícola",
         "filial": "PSA 1",
         "complement" : "TEST IN SEARCH RESULTS LIVE TEXT DEMONSTRATIVE TEST RUN",
@@ -14,7 +14,7 @@
         "archiveLocale": "gleba.kml"
     },
     {
-        "document": "cpf",
+        "document": "CPF",
         "type": "Agrícola",
         "filial": "PSA 2",
         "complement" : "TEST IN SEARCH RESULTS 2 LIVE TEXT DEMONSTRATIVE TEST RUN",
@@ -28,7 +28,7 @@
         "archiveLocale": "gleba.kml"
     },
     {
-        "document": "cpf",
+        "document": "CPF",
         "type": "Agrícola",
         "filial": "PSA 2",
         "complement" : "TEST IN SEARCH RESULTS 3 LIVE TEXT DEMONSTRATIVE TEST RUN",
@@ -42,7 +42,7 @@
         "archiveLocale": "gleba.kml"
     },
     {
-        "document": "cpf",
+        "document": "CNPJ",
         "type": "Agrícola",
         "filial": "PSA 1",
         "complement" : "TEST IN SEARCH RESULTS 5 LIVE TEXT DEMONSTRATIVE TEST RUN RUNNNER",
