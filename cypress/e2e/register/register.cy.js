@@ -17,7 +17,7 @@ describe('Create all registers', () => {
 });
 
 function registerOperationType(unicRegister) {
-    it.only(`e2e - include an operation based on type ${unicRegister.type} 
+    it(`e2e - include an operation based on type ${unicRegister.type} 
             in client using documents in ${unicRegister.document}
             in culture ${unicRegister.culture}
             in archive ${unicRegister.archiveLocale}
