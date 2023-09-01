@@ -1,4 +1,4 @@
-name: develop CI
+name: homolog CI
 
 on:
   push:
