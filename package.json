@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "open": "npx cypress open",
-    "run-register-dev": "npx cypress run --spec cypress/e2e/register.cy.js --config baseUrl=https://plataforma-qa.dev-ads.audsat.io/app",
-    "run-register-hml": "npx cypress run --spec cypress/e2e/register.cy.js --config baseUrl=homolog/"
+    "register-dev": "npx cypress run --spec cypress/e2e/register/register.cy.js --config baseUrl=https://plataforma-qa.dev-ads.audsat.io/app",
+    "register-hml": "npx cypress run --spec cypress/e2e/register/register.cy.js --config baseUrl=https://plataforma-qa.dev-ads.audsat.io/app"
   },
   "keywords": [],
   "author": "",
