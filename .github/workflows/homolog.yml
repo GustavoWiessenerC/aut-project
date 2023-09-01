@@ -1,9 +1,9 @@
-name: develop CI
+name: homolog CI
 
 on:
   push:
     branches:
-      - develop
+      - homolog
 
 jobs:
   test:
