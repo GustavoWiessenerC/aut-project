@@ -2,8 +2,8 @@
 
 * O Processo consiste em gerenciar uma operação de cadastramento Pecuária e Agrícola de maneira inteligente, gerenciando dados atraves de arquivos json para maior flexibilidade e escalabilidade dos dados, visando ter diversos cénarios contemplados com menor código e versatilidade das informações.
 
-### Overview Solução
-![](overview-solucao.png)
+### Overview Solução:
+![](arquitetura.png)
 
 ### Recursos Utilizados:
 
@@ -11,6 +11,7 @@
 * Cypress 13.1.0 - Biblioteca para criação dos testes automatizados;
 * Cypress Dashboard Cloud - Dashboard para metrificar os processos dos testes, com relatórios a cada subida para as branchs de integração contínua;
 * GitHub actions - Servidor para Integração continua do nosso código;
+* SonarCloud - Ferramenta para Metrificar processos de qualidade ao codigo-fonte, evitando vulnerabilidades, riscos a segurança, cobertura de códigos, duplicações, itens críticos, complexidade cognitiva da aplicação e dentre outros pontos.
 
 
 ### Configurações:
@@ -51,7 +52,31 @@ Para acessar os reports do Dashboard cloud para acessar o link, fazer cadastro e
 
 ### Reports iniciais:
 
-Reports iniciais gerados, para acessar mais reports e visualização de videos acessar o link acima:
+Reports iniciais gerados, para acessar mais reports e visualização de videos acessar o link acima.
+
+<hr>
+
+
+#### SonarCloud Métricas:
+
+Geral:
+
+Relatório de BUGS da app, segurança, manutenabilidade, e itens de segurança.
+![](sonar-1.PNG)
+
+* Segurança - Padronização Classe A.
+
+![](image.png)
+
+* Confiabilidade - Padronizações com alta confiabilidade.
+
+![](image-2.png)
+
+Para acessar mais métricas do projeto com SonarCloud, pode acessar diretamente por:
+
+https://sonarcloud.io/summary/overall?id=GustavoWiessenerC_aut-project
+
+<hr>
 
 #### Test cases:
 ![](test-case-1.PNG)
