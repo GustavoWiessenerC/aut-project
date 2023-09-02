@@ -11,7 +11,7 @@
 * Cypress 13.1.0 - Biblioteca para criação dos testes automatizados;
 * Cypress Dashboard Cloud - Dashboard para metrificar os processos dos testes, com relatórios a cada subida para as branchs de integração contínua;
 * GitHub actions - Servidor para Integração continua do nosso código;
-* SonarCloud - Ferramenta para Metrificar processos de qualidade ao codigo-fonte, evitando vulnerabilidades, riscos a segurança, cobertura de códigos, duplicações, itens críticos, complexidade cognitiva da aplicação e dentre outros pontos.
+* SonarCloud - Ferramenta para Metrificar processos de qualidade ao codigo-fonte, evitando vulnerabilidades, riscos a segurança, problemas com cobertura de códigos, duplicações, itens críticos, complexidade cognitiva da aplicação e dentre outros pontos.
 
 
 ### Configurações:
@@ -38,7 +38,11 @@ Para melhor entendimento foi levado o host para uma configuração global da apl
 
 * npm install - instalar as dependencias com base no arquivo package.json.
 
+Modo padrão cypress:
+
 * npm run start ou npx cypress open - abrir ambiente cypress.
+
+Modo headless para rodar somente os testes:
 
 * npm run register-dev - rodar todos os testes em nivel de desenvolvimento.
 
