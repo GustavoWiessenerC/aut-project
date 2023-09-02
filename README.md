@@ -54,13 +54,13 @@ Para acessar os reports do Dashboard cloud para acessar o link, fazer cadastro e
 Reports iniciais gerados, para acessar mais reports e visualização de videos acessar o link acima:
 
 #### Test cases:
-![](test-case-1.png)
+![](test-case-1.PNG)
 
 #### Report Cases:
-![](test-case-2.png)
+![](test-case-2.PNG)
 
 ### Report de Test Replay:
 
 https://cloud.cypress.io/projects/dofksu/runs/1/test-results/176a1b04-ea61-4ac8-8710-2436f4047d53/replay?att=1
 
-![](result-1.png)
+![](result-1.PNG)
